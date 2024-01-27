@@ -1,24 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="yandex-verification" content="c9cb3fe3bb0f3cfc" />
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<title>Dene Teknoloji</title>
-	  <meta name="description" content="Connectivity Solutions for Single Board Computers">
-<style>
-  body {font-family:helvetica; padding: 10px;}
-  form {margin: auto;
- 
-  
-</style>
-	
+  <meta name="yandex-verification" content="c9cb3fe3bb0f3cfc" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Dene Teknoloji</title>
+  <meta name="description" content="Connectivity Solutions for Single Board Computers">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {font-family:helvetica; padding: 10px;}
+    form {margin: auto;}
+  </style>
 </head>
-
 <body>
+
 <h1 style="text-align: center;"><img src="https://raw.githubusercontent.com/ismetergin/deneio/main/dene_logo.png" alt="" width="30%" /></h1>
 <h1 style="text-align: center;">Dene Teknoloji AŞ&nbsp;(Sixfab)</h1>
 <p style="text-align: center;"><strong>Headquarter:</strong> İkitelli OSB Mah. Bedrettin Dalan Blv. Metro34 Plaza 23/56 Başakşehir / İstanbul</p>
-<p style="text-align: center;"><strong>&nbsp;ISBI Freezone:</strong> Yeşilk&ouml;y SB Mah. C Blok NO:1/7 Bakırk&ouml;y / İstanbul <br /><br /></p>
+<p style="text-align: center;"><strong>&nbsp;ISBI Freezone:</strong> Yeşilköy SB Mah. C Blok NO:1/7 Bakırköy / İstanbul <br /><br /></p>
 <br />
 <h2 style="text-align: center;">Contact Us<br /><br /></h2>
 
@@ -26,58 +26,54 @@
   <div class="w3-container w3-quarter">
   </div>
   <div class="w3-container w3-half">
-	  
-	<!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-  hbspt.forms.create({
-	region: "na1",
-	portalId: "4951630",
-	formId: "0cbb6f4b-50d7-4c4d-a09a-66bc793fd9aa"
-});
-</script>
+    <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "4951630",
+        formId: "0cbb6f4b-50d7-4c4d-a09a-66bc793fd9aa"
+      });
+    </script>
   </div>
   <div class="w3-container w3-quarter">
   </div>
 </div>
 
-<!-- Popup 1: Misyon -->
-<div id="misyonPopup" style="display:none;">
-  <h2>Misyon</h2>
-  <p>Dene Teknoloji A.Ş. olarak, işletmeleri güçlendirmek için faydalı, yüksek kaliteli, ucuz bağlantı çözümleri tasarlıyor ve üretiyoruz...</p>
-  <button onclick="togglePopup('misyonPopup')">Close</button>
+<!-- Popup triggers -->
+<div class="popup-triggers" style="text-align: center; margin-top: 30px;">
+  <button id="misyonBtn">Misyon</button>
+  <button id="vizyonBtn">Vizyon</button>
+  <button id="kaliteBtn">Kalite Politikası</button>
 </div>
 
-<!-- Popup 2: Vizyon -->
-<div id="vizyonPopup" style="display:none;">
-  <h2>Vizyon</h2>
-  <p>Vizyonumuz, dünya genelinde kopmayan internet bağlantısı ve güvenli veri sağlayarak...</p>
-  <button onclick="togglePopup('vizyonPopup')">Close</button>
+<!-- Popups -->
+<div id="misyonPopup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Misyon</h2>
+    <p>Dene Teknoloji A.Ş. olarak...</p>
+  </div>
 </div>
 
-<!-- Popup 3: Kalite Politikası -->
-<div id="kalitePopup" style="display:none;">
-  <h2>Kalite Politikası</h2>
-  <p>Dene Teknoloji A.Ş. kalite politikasını ürün ve hizmet güvenliğini esas alarak...</p>
-  <button onclick="togglePopup('kalitePopup')">Close</button>
+<div id="vizyonPopup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Vizyon</h2>
+    <p>Vizyonumuz, dünya genelinde...</p>
+  </div>
 </div>
 
+<div id="kalitePopup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Kalite Politikası</h2>
+    <p>Dene Teknoloji A.Ş. kalite politikasını...</p>
+  </div>
+</div>
 
-<button onclick="togglePopup('misyonPopup')">Show Misyon</button>
-<button onclick="togglePopup('vizyonPopup')">Show Vizyon</button>
-<button onclick="togglePopup('kalitePopup')">Show Kalite Politikası</button>
-
-
-<script>
-function togglePopup(popupId) {
-  var popup = document.getElementById(popupId);
-  popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
-}
-</script>
-
-	
-
+<script src="script.js"></script>
 </body>
-
+</html>
